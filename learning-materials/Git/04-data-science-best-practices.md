@@ -207,13 +207,13 @@ dependencies:
 
 Use this checklist before every commit:
 
-- [ ] Notebook outputs removed or stripped
-- [ ] Large data files excluded from Git
-- [ ] Models and checkpoints stored outside Git
-- [ ] Secrets stored in `.env` only
-- [ ] `.env` listed in `.gitignore`
-- [ ] Reproducible environment described in config files
-- [ ] README updated for setup and usage
+- Notebook outputs removed or stripped
+- Large data files excluded from Git
+- Models and checkpoints stored outside Git
+- Secrets stored in `.env` only
+- `.env` listed in `.gitignore`
+- Reproducible environment described in config files
+- README updated for setup and usage
 
 ## 6. Example `.gitignore` Additions
 

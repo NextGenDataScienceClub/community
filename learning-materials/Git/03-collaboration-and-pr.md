@@ -114,11 +114,11 @@ Explain the method, code path, or analysis steps implemented.
 - Model version or training run identifier
 
 ## Sanity Checks
-- [ ] Notebook outputs stripped / cleaned
-- [ ] .env or secrets not committed
-- [ ] Data files excluded from Git
-- [ ] Relevant tests or validation run
-- [ ] Documentation updated if needed
+- Notebook outputs stripped / cleaned
+- .env or secrets not committed
+- Data files excluded from Git
+- Relevant tests or validation run
+- Documentation updated if needed
 
 ## Review Questions
 List specific questions or concerns for reviewers.

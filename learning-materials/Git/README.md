@@ -1,36 +1,25 @@
 # Data Science Club: Git & GitHub Engineering Guidelines
 
-This workshop is designed for university Data Science Club members who want a practical, production-ready workflow for versioning code, collaborating on notebooks, and shipping analyses responsibly. The goal is not only to learn Git syntax, but to develop habits that help teams work safely, review code effectively, and keep research reproducible.
+This learning path is designed for Data Science Club members who want a practical, production-ready workflow for versioning code, collaborating on notebooks, and shipping analyses responsibly. The goal is not only to learn Git syntax, but to develop habits that help teams work safely, review code effectively, and keep research reproducible.
 
-## Workshop Overview
+## Learning Path Overview
 
-The session is structured as a 90-minute guided lab with short concept explanations and hands-on terminal practice.
+This collection is organized as a self-paced curriculum for students and contributors who want to revisit Git concepts anytime, without being tied to a single workshop session.
 
 ```mermaid
 flowchart LR
-    A[Kickoff] --> B[01: Git Fundamentals]
-    B --> C[02: Branching & Merging]
-    C --> D[03: Collaboration & PRs]
-    D --> E[04: Data Science Best Practices]
-    E --> F[05: Interactive Resources]
-    F --> G[Hands-on Practice]
+    A[Git Foundations] --> B[Branching & Merging]
+    B --> C[Collaboration & PRs]
+    C --> D[Data Science Best Practices]
+    D --> E[Interactive Practice]
 ```
-
-| Time | Module | Focus |
-| --- | --- | --- |
-| 0-10 min | Kickoff | Why Git matters in data science and engineering |
-| 10-25 min | [01: Git Fundamentals](./01-git-fundamentals.md) | Repository architecture, setup, staging, commits |
-| 25-45 min | [02: Branching and Merging](./02-branching-and-merging.md) | Feature branches, merge strategies, conflict resolution |
-| 45-60 min | [03: Collaboration and PRs](./03-collaboration-and-pr.md) | Remotes, GitHub workflow, reviews, etiquette |
-| 60-75 min | [04: Data Science Best Practices](./04-data-science-best-practices.md) | Notebooks, secrets, data, reproducibility |
-| 75-90 min | [05: Interactive Resources](./05-interactive-resources.md) | Practice, troubleshooting, and follow-up learning |
 
 ## Prerequisites
 
-Before the workshop, make sure you have:
+Before starting, make sure you have:
 
 - Git CLI installed locally
-- A GitHub account with access to the club or project repository
+- A GitHub account
 - SSH keys configured, or a GitHub Personal Access Token for HTTPS
 - A shell or terminal available on your machine
 - A basic understanding of file systems and command line usage
@@ -55,7 +44,7 @@ If SSH is not configured, use the GitHub credential helper or personal access to
 
 ## Expected Learning Outcomes
 
-By the end of the workshop, each member should be able to:
+By the end of this curriculum, each member should be able to:
 
 - Explain the difference between the working directory, staging area, local repository, and remote repository.
 - Initialize a repository, clone an existing project, and configure Git for personal use.
@@ -65,7 +54,7 @@ By the end of the workshop, each member should be able to:
 - Protect sensitive data and notebooks using .gitignore, environment variables, and reproducibility tooling.
 - Recognize the difference between normal developer workflows and data science repository hygiene.
 
-## Recommended Workflow for Club Members
+## Recommended Workflow
 
 1. Create a branch for each task or experiment.
 2. Keep commits small and meaningful.
