@@ -1,0 +1,136 @@
+# Data Science Club Git Ignore Template
+# This file is a starting point for Python and data science repositories.
+# Copy it to .gitignore in a project and customize as needed.
+
+# =========================================
+# Python runtime files
+# =========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+conda/
+.python-version
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test and coverage artifacts
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Jupyter and notebook artifacts
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Data files (do not commit raw datasets)
+data/
+raw_data/
+processed_data/
+*.csv
+*.tsv
+*.parquet
+*.h5
+*.hdf5
+*.feather
+*.npz
+*.npy
+*.arrow
+*.orc
+*.avro
+*.jsonl
+
+# Model artifacts
+models/
+checkpoints/
+mlruns/
+runs/
+wandb/
+lightning_logs/
+artifacts/
+weights/
+*.pt
+*.pth
+*.onnx
+*.pkl
+*.pickle
+*.bin
+*.safetensors
+*.joblib
+
+# Experiment tracking and logs
+wandb/
+runs/
+mlruns/
+lightning_logs/
+logs/
+*.log
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+credentials.json
+secrets.json
+secret_key
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+config/*.json
+
+# Database files
+*.db
+*.sqlite3
+*.sqlite
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Miscellaneous local generated files
+.tmp/
+.temp/
+tmp/
+cache/
+
+# Documentation builds
+site/
+docs/_build/
+
+# Package manager files if you do not want lockfiles committed
+# Uncomment if your workflow prefers not to track them.
+# poetry.lock
+# Pipfile.lock
+# uv.lock
+
+# If using DVC or Git LFS, keep these tracked intentionally.
+# .dvc/
+# .gitattributes
+
+# Local shell history
+autoenv.env
+.shell_history
