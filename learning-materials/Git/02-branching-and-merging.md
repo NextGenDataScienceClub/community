@@ -88,15 +88,12 @@ This creates a clean branch for work that is not yet ready to be merged into the
 
 A fast-forward happens when the target branch has not moved forward since the feature branch was created.
 
-```text
-main: A --- B --- C
-feat:              D --- E
-```
-
-When merged, the branch pointer simply moves forward:
-
-```text
-main: A --- B --- C --- D --- E
+```mermaid
+flowchart LR
+    A[A] --> B[B] --> C[C]
+    C --> D[D] --> E[E]
+    D --> F[Fast-forward merge]
+    E --> G[main = A -> B -> C -> D -> E]
 ```
 
 This is the cleanest case.
@@ -105,9 +102,15 @@ This is the cleanest case.
 
 This occurs when both branches have independent commits.
 
-```text
-main:    A --- B --- C
-feat:    A --- B --- D --- E
+```mermaid
+flowchart LR
+    A[A] --> B[B] --> C[C]
+    A --> D[D] --> E[E]
+    B --> F[shared base]
+    C --> G[main branch]
+    E --> H[feature branch]
+    G --> I[Merge commit combines both histories]
+    H --> I
 ```
 
 Git creates a merge commit to combine both histories.
@@ -185,6 +188,18 @@ git merge feat/model-config
 ```
 
 Git will report a conflict:
+
+```mermaid
+flowchart TD
+    A[main branch] --> B[feature branch changes the same lines]
+    A --> C[fix branch changes the same lines]
+    B --> D[merge attempt]
+    C --> D
+    D --> E[CONFLICT]
+    E --> F[Resolve manually]
+    F --> G[Stage resolved file]
+    G --> H[Commit the merge result]
+```
 
 ```text
 Auto-merging config.yaml

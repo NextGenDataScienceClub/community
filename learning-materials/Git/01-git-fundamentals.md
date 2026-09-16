@@ -15,17 +15,11 @@ For data science projects, Git is especially important because analysis code, no
 
 A common way to understand Git is to separate the repository into distinct areas:
 
-```text
-Working Directory
-    |
-    v
-Staging Area (Index)
-    |
-    v
-Local Repository (.git/)
-    |
-    v
-Remote Repository (origin on GitHub)
+```mermaid
+flowchart TB
+    A[Working Directory\nFiles you edit locally] --> B[Staging Area\nIndex\n git add ]
+    B --> C[Local Repository\n.git/\nCommit history]
+    C --> D[Remote Repository\norigin on GitHub]
 ```
 
 ### Working Directory

@@ -2,6 +2,19 @@
 
 These resources are intentionally curated for students who want to practice Git in a low-risk environment before applying the workflow to real repositories.
 
+## Interactive Learning Map
+
+```mermaid
+flowchart LR
+    A[Start here] --> B[Learn Git Branching]
+    A --> C[Oh My Git!]
+    B --> D[GitHub Skills]
+    C --> D
+    D --> E[Pro Git]
+    E --> F[Dangit, Git!?!]
+    F --> G[Cheat Sheet]
+```
+
 ## Interactive Simulators and Games
 
 ### Learn Git Branching

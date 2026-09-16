@@ -49,6 +49,18 @@ git push
 
 The standard GitHub collaboration workflow is:
 
+```mermaid
+flowchart LR
+    A[Create branch] --> B[Commit focused changes]
+    B --> C[Push to remote]
+    C --> D[Open Pull Request]
+    D --> E[Code review]
+    E --> F{Approved?}
+    F -- Yes --> G[Merge to main]
+    F -- No --> H[Address comments]
+    H --> D
+```
+
 1. Create a branch for a task.
 2. Make focused edits.
 3. Commit them with a clear message.

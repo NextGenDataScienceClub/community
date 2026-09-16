@@ -4,6 +4,15 @@
 
 Jupyter notebooks are powerful but they are also notorious for creating noisy diffs. Raw `.ipynb` files often include:
 
+```mermaid
+flowchart TD
+    A[Notebook run] --> B[Cell outputs captured]
+    B --> C[Large metadata stored]
+    C --> D[Git sees noisy diffs]
+    D --> E[Hard to review cleanly]
+    E --> F[Use nbstripout and clean notebooks before commit]
+```
+
 - cell outputs
 - execution counts
 - image data
@@ -46,6 +55,17 @@ After saving a notebook and running `git add`, the notebook diff should mostly r
 ## 2. Data and Model Artifacts Should Not Live in Git
 
 Large files can make a repository slow, difficult to push, and expensive to clone. In data science, avoid committing things like:
+
+```mermaid
+flowchart LR
+    A[Raw dataset] --> B[Model weights]
+    A --> C[Git repo]
+    B --> C
+    C --> D[Slow clone / large diffs]
+    A --> E[DVC, Git LFS, S3, Hugging Face]
+    B --> E
+    E --> F[Tracked external storage]
+```
 
 - `.csv`
 - `.parquet`

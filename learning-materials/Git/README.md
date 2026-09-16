@@ -6,6 +6,16 @@ This workshop is designed for university Data Science Club members who want a pr
 
 The session is structured as a 90-minute guided lab with short concept explanations and hands-on terminal practice.
 
+```mermaid
+flowchart LR
+    A[Kickoff] --> B[01: Git Fundamentals]
+    B --> C[02: Branching & Merging]
+    C --> D[03: Collaboration & PRs]
+    D --> E[04: Data Science Best Practices]
+    E --> F[05: Interactive Resources]
+    F --> G[Hands-on Practice]
+```
+
 | Time | Module | Focus |
 | --- | --- | --- |
 | 0-10 min | Kickoff | Why Git matters in data science and engineering |
