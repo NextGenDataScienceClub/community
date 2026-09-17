@@ -1,10 +1,3 @@
----
-
----
-
-###  `Pre_Read.md` (Week 1 Prep Page)**
-
-```markdown
 # 📍 Week 1 Prep: Environment, Wrangling & Feature Engineering
 
 **Session Date:** September 14  
