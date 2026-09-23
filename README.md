@@ -5,6 +5,7 @@ This repository is used for learning materials and collaborative practice resour
 ## Topics
 
 - [Git](./learning-materials/Git)
+- [Data Analytics](./learning-materials/DataAnalytics)
 
 ## Repository Structure
 
